@@ -61,4 +61,6 @@ To start server:
 /package.json
 /README.md
 
+ERD Diagram
+
 <img width="2041" height="1043" alt="BED CA2 ERD (2)" src="https://github.com/user-attachments/assets/a3102c81-ecb2-49a8-9634-6e5210c45241" />
