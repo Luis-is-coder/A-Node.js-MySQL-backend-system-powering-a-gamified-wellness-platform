@@ -1,28 +1,47 @@
-# Gamified Wellness Challenge Backend
-A Node.js + MySQL backend powering a gamified wellness platform with authentication, rewards, and progress tracking.
+# Gamified Wellness Challenge Platform
+CosmicWellness is a small gamified wellness website I built using HTML, JavaScript, and a MySQL database.
 
 Users complete wellness challenges, earn points, unlock planets and spaceship skins, and progress through a space‑themed journey.
 
+## Features
 
-# Features
-- User registration with strong‑password validation
-- Default spaceship, skin, and starting location assigned on signup
-- Create, update, delete wellness challenges (creator‑only)
-- Complete challenges to earn points
-- Automatic unlocking of planets and spaceship skins based on points
-- Creation and updating of planets and spaceship skins
-- User account update/delete with credential verification
-- Challenge creation rewards for creator(10 points )
-- Challenge point cannot exceed 50
-- Clear validation and helpful feedback for all requests
-- User’s current planet, skin, fuel, and level update automatically after each challenge completion according to user points
-- Deleting a user removes all related spaceship, unlock data and relations
-- Only the challenges the user created are left
-- Only the user can delete his/her account
-- User can see the dashboard
-- User can create, edit and delete planets, challenges and spaceshipskins
-- User can edit his/her account details: username, password 
+### User Authentication
+- Only logged‑in users can access challenges, planets, and spaceship skins.
+- Non‑logged‑in users can only see the home page and the leaderboard podium.
+- If a user tries to access a locked page, they will be asked to sign in.
 
+### Points & Progression System
+- Users earn points by completing and creating challenges.
+- Points don’t directly unlock items. Instead, the total points decide:
+  - The user’s current spaceship skin
+  - The planet status they are exploring
+
+### Create & Explore
+- Users can create their own:
+  - Challenges  
+  - Planets  
+  - Spaceship skins  
+- Anything created will appear in:
+  - **Created** section (their own items)
+  - **Available** section (for all users)
+
+### Profile Dashboard
+- Users can track:
+  - Completed challenges
+  - Not completed challenges
+  - Created challenges
+- Same tracking applies to planets and spaceship skins.
+- Leaderboard shows total points and ranking.
+
+### Account Management
+- Users can update their name and password.
+- Users can delete their account after verifying their identity.
+- The total number of explorers on the home page updates automatically whenever an account is created or deleted.
+
+## Tech Stack
+- **Frontend:** HTML, CSS, JavaScript  
+- **Backend:** Node.js  
+- **Database:** MySQL  
 
 # Setup & Commands
 To create package.json with basic structure:
