@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Home - CosmicWellness</title>
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/color.css" rel="stylesheet" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <i class="bi bi-rocket-takeoff-fill text-primary fs-3 me-2"></i>
+        <span class="fw-bold fs-4">Cosmic<span class="text-warning">Wellness</span></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <!-- me-auto: margin-right: auto -->
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="planets.html">Planets</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="spaceshipskins.html">SpaceShipSkins</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="challenges.html">Challenges</a>
+          </li>
+        </ul>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <!-- ms-auto: margin-left: auto -->
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a id="profileButton" href="/profile.html" class="nav-link">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a id="logoutButton" href="#" class="nav-link">Logout</a>
+          </li>
+          <li class="nav-item">
+            <a id="loginButton" href="/login.html" class="nav-link">Login</a>
+          </li>
+          <li>
+            <div class="btn-nav">
+              <a id="registerButton" class="btn text-bg-dark btn-small navbar-btn" href="/register.html">Register!</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="py-4">
+    <div class="container">
+      <!-- Home Page -->
+      <section id="home-page" class="page active">
+
+        <!-- Hero Section: Title, Description, Button, Animation -->
+        <div class="row align-items-center mb-5 pb-4">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <h1 class="display-3 fw-bold mb-4 cosmic-title">
+              Journey Through the <span class="text-warning">Cosmos</span> of Wellness
+            </h1>
+            <p class="lead mb-4 text-light fs-5">Scroll down and check who are leading the journey!!!</p>
+            <p class="lead mb-4 text-light fs-5">
+              Complete wellness challenges, earn points, unlock planets and spaceship skins.
+              Your journey through the galaxy begins here!!!
+            </p>
+
+            <!-- Begin Journey Button -->
+            <div class="d-grid gap-2 col-lg-8 mx-auto mx-lg-0 mb-4">
+              <button class="btn btn-primary btn-lg px-5 py-3 fs-5" id="begin-journey-btn">
+                <i class="bi bi-rocket-takeoff me-2"></i> Begin Journey
+              </button>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="position-relative">
+              <div class="cosmic-animation">
+                <div class="planet planet-large"
+                  style="background: radial-gradient(circle at 30% 30%, #4a90e2, #1a237e);"></div>
+                <div class="planet planet-small"
+                  style="background: radial-gradient(circle at 30% 30%, #ff6b6b, #c62828);"></div>
+                <div class="spaceship">
+                  <i class="bi bi-rocket-takeoff-fill text-primary fs-1"></i>
+                </div>
+                <div class="stars"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stats Section: Active Explorers (Left) & Leaderboard (Right) -->
+        <div class="row g-4 mt-4">
+
+          <!-- LEFT: Active Explorers -->
+          <div class="col-lg-4">
+            <h3 class="text-center mb-4 fw-bold text-white">
+              <i class="bi bi-people-fill me-2 text-info"></i>Community
+            </h3>
+            <div class="card bg-dark border-primary shadow h-100">
+              <div class="card-body text-center py-5">
+                <i class="bi bi-people-fill text-info mb-3" style="font-size: 4rem;"></i>
+                <h4 class="card-title text-white mb-3">Active Explorers</h4>
+                <p class="display-2 fw-bold text-white mb-0" id="total-users">
+                  <span class="spinner-border" role="status"></span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT: Top 3 Leaderboard -->
+          <div class="col-lg-8">
+            <h3 class="text-center mb-4 fw-bold text-white">
+              <i class="bi bi-trophy-fill me-2 text-warning"></i>Top Performers
+            </h3>
+
+            <div class="row g-3 align-items-end">
+              <!-- 2nd Place -->
+              <div class="col-md-4">
+                <div class="card bg-dark border-light shadow h-100">
+                  <div class="card-body text-center py-4">
+                    <div class="badge bg-secondary mb-3 px-3 py-2">
+                      <i class="bi bi-award me-1"></i>2nd
+                    </div>
+                    <div class="mb-3">
+                      <i class="bi bi-person-circle text-light" style="font-size: 3.5rem;"></i>
+                    </div>
+                    <h6 class="text-white mb-2 fw-bold" id="second-name">
+                      <span class="spinner-border spinner-border-sm" role="status"></span>
+                    </h6>
+                    <div class="text-warning mb-2">
+                      <i class="bi bi-star-fill me-1"></i>
+                      <span id="second-points" class="fw-bold">0</span> pts
+                    </div>
+                    <span class="badge bg-secondary px-2 py-1 small" id="second-level">Level 1</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 1st Place - Taller -->
+              <div class="col-md-4">
+                <div class="card bg-dark border-warning shadow-lg h-100">
+                  <div class="card-body text-center py-5">
+                    <div class="badge bg-warning text-dark mb-3 px-3 py-2 fs-6">
+                      <i class="bi bi-trophy-fill me-1"></i>1st
+                    </div>
+                    <div class="mb-3">
+                      <i class="bi bi-person-circle text-warning" style="font-size: 5rem;"></i>
+                    </div>
+                    <h5 class="text-white mb-2 fw-bold" id="first-name">
+                      <span class="spinner-border spinner-border-sm" role="status"></span>
+                    </h5>
+                    <div class="text-warning mb-2 fs-4">
+                      <i class="bi bi-star-fill me-1"></i>
+                      <span id="first-points" class="fw-bold">0</span> pts
+                    </div>
+                    <span class="badge bg-warning text-dark px-3 py-2" id="first-level">Level 1</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 3rd Place -->
+              <div class="col-md-4">
+                <div class="card bg-dark border-danger shadow h-100">
+                  <div class="card-body text-center py-4">
+                    <div class="badge bg-danger mb-3 px-3 py-2">
+                      <i class="bi bi-award me-1"></i>3rd
+                    </div>
+                    <div class="mb-3">
+                      <i class="bi bi-person-circle text-danger" style="font-size: 3.5rem;"></i>
+                    </div>
+                    <h6 class="text-white mb-2 fw-bold" id="third-name">
+                      <span class="spinner-border spinner-border-sm" role="status"></span>
+                    </h6>
+                    <div class="text-warning mb-2">
+                      <i class="bi bi-star-fill me-1"></i>
+                      <span id="third-points" class="fw-bold">0</span> pts
+                    </div>
+                    <span class="badge bg-danger px-2 py-1 small" id="third-level">Level 1</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+    </div>
+  </main>
+
+  <footer class="mt-5 py-3 bg-primary text-bg-primary text-center">
+    <p class="m-0 py-0 px-4">
+      This is created by Pyae Phyo Maung (DIT/1B/03). <br>
+      This is for Academic Purposes in the Backend Development Module.
+    </p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+
+  <!-- ADD JAVASCRIPTS BEFORE BODY ENDTAG -->
+  <script src="js/tokenManager.js" type="text/javascript"></script>
+  <script src="js/authHelper.js" type="text/javascript"></script>
+  <script src="js/queryCmds.js" type="text/javascript"></script>
+  <script src="js/getCurrentURL.js" type="text/javascript"></script>
+  <script src="js/userNavbarToggle.js" type="text/javascript"></script>
+  <script src="js/home.js" type="text/javascript"></script>
+</body>
+
+</html>
